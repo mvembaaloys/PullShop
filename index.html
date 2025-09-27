@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique de Pulls</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">🧥 PullShop</div>
+    <div>
+      <a href="#">Accueil</a>
+      <a href="#produits">Nos Produits</a>
+      <a id="openCart">Panier 🛒</a>
+    </div>
+  </nav>
+
+  <!-- Accueil -->
+  <div class="hero">
+    Bienvenue sur PullShop
+    
+    <p class="hero1">
+      <br>
+      Réchauffe Toi en restant toujour chaud
+    </p> 
+  </div>
+
+  <!-- Produits -->
+  <section id="produits" class="products">
+    <h2>Nos Produits</h2>
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="pull/Sweat-shirt Pokemon Pikachu pour hommes et femmes, Gengar Sicilax, sweat à capuche étudiant, pull pour jeunes, veste de sport cool, cadeaux pour enfants, jouet d'automne et d'hiver - AliExpress 26.jpg" alt="Pull 1">
+        <h3>Sweat-shirt Pokemon Pikachu pour hommes </h3>
+        <p>8 0000 FCFA</p>
+        <button class="btn add-to-cart" data-name="Sweat-shirt Pokemon Pikachu pour hommes " data-price="8 000">Ajouter au panier</button>
+      </div>
+      
+      <div class="product">
+        <img src="pull/Pull chaud à col roulé tricoté pour hommes et femmes, mode automne, Patchwork, Streetwear, pulls.jpg" alt="Pull 2">
+        <h3>Pull chaud à col roulé tricoté</h3>
+        <p>12 000 FCFA</p>
+        <button class="btn add-to-cart" data-name="Pull chaud à col roulé tricoté" data-price="12 000">Ajouter au panier</button>
+      </div>
+      
+      <div class="product">
+        <img src="pull/Pull unisexe Mountain High Streetwear pour hommes et femmes, chemise pull, sweat-shirt pour couple,.jpg" alt="Pull 3">
+        <h3>Pull Ton Montagne</h3>
+        <p>7 500 FCFA</p>
+        <button class="btn add-to-cart" data-name="Pull Ton Montagne" data-price="7 500">Ajouter au panier</button>
+      </div>
+      
+      <div class="product">
+        <img src="pull/Pull chat de dessin animé pour hommes et femmes, coupe ample, haut tricoté, Base, veste de Couple,.jpg" alt="Pull 4">
+        <h3>Pull chat de dessin animé pour hommes</h3>
+        <p>15 000 FCFA</p>
+        <button class="btn add-to-cart" data-name="Pull chat de dessin animé pour hommes" data-price="15 000">Ajouter au panier</button>
+      </div>
+      
+      <div class="product">
+        <img src="pull/Anime démon Slayer Kochou Shinobu graphique imprimé à capuche hommes sweat à capuche pour femme.jpg" alt="Pull 5">
+        <h3>Pull Demon Slayer</h3>
+        <p>12 000 FCFA</p>
+        <button class="btn add-to-cart" data-name="Pull Demon Slayer" data-price="12 000">Ajouter au panier</button>
+      </div>
+      
+      <div class="product">
+        <img src="pull/baa2dad2-9cf3-4734-91ee-ed2be79bb888.jpg" alt="Pull 6">
+        <h3>Pull fille </h3>
+        <p>7 000 FCFA</p>
+        <button class="btn add-to-cart" data-name="Pull fille" data-price="7 000">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="pull/Pull en tricot décontracté pour hommes et femmes, motif d'art de chat mignon, pull d'hiver.jpg" alt="Pull 7">
+        <h3>Pull Tricot </h3>
+        <p>10 000 FCFA</p>
+        <button class="btn add-to-cart" data-name="Pull Tricot" data-price="10 000">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="pull/Vêtements homme & femme, shoppez la mode en ligne.jpg" alt="Pull 8">
+        <h3>Pull Style paysage </h3>
+        <p>14 000 FCFA</p>
+        <button class="btn add-to-cart" data-name="pull style paysage" data-price="14 000">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="pull/Y2k Hip Hop laine pull surdimensionné hommes vêtements Streetwear tricots femmes gothique Vintage.jpg" alt="Pull 9">
+        <h3>Pull laine </h3>
+        <p>9 000 FCFA</p>
+        <button class="btn add-to-cart" data-name="Pull laine" data-price="9 000">Ajouter au panier</button>
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+  <!-- Panier -->
+  <div class="cart" id="cart">
+    <span class="close-btn" id="closeCart">❌ Fermer</span>
+    <h2>Votre Panier</h2>
+    <div id="cartItems"></div>
+    <p class="cart-total">Total : <span id="cartTotal">0.00</span> FCFA</p>
+    <button class="btn" id="checkoutBtn">🛍 Commander</button>
+  </div>
+
+  <footer class="bg-dark text-white text-center p-4">
+    <h3 style="letter-spacing: 2px;">CONTACT</h3>
+    <p style="font-size: 12px; margin-top: 30px;">
+    +237 6 85 84 84 / +237 6 87 85 84 45     </p>
+    <p style="letter-spacing: 2px;">Au revoir</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
