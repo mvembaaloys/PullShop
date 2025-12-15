@@ -8,7 +8,6 @@ const checkoutBtn = document.getElementById("checkoutBtn");
 let items = [];
 let total = 0;
 
-// Ouvrir / fermer le panier
 openCartBtn.addEventListener("click", () => {
   cart.classList.add("open");
 });
@@ -16,7 +15,6 @@ closeCartBtn.addEventListener("click", () => {
   cart.classList.remove("open");
 });
 
-// Ajouter au panier
 document.querySelectorAll(".add-to-cart").forEach(btn => {
   btn.addEventListener("click", () => {
     const name = btn.getAttribute("data-name");
@@ -29,7 +27,6 @@ document.querySelectorAll(".add-to-cart").forEach(btn => {
   });
 });
 
-// Affichage du panier
 function renderCart() {
   cartItems.innerHTML = "";
   items.forEach((item, index) => {
@@ -44,14 +41,12 @@ function renderCart() {
   cartTotal.textContent = total.toFixed(2);
 }
 
-// Supprimer un article
 function removeItem(index) {
   total -= items[index].price;
   items.splice(index, 1);
   renderCart();
 }
 
-// Simuler une commande
 checkoutBtn.addEventListener("click", () => {
   if (items.length === 0) {
     alert("Votre panier est vide !");
@@ -64,5 +59,5 @@ checkoutBtn.addEventListener("click", () => {
   }
 });
 
-// Rendre accessible la fonction à window
+
 window.removeItem = removeItem;
